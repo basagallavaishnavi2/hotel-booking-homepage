@@ -1,0 +1,225 @@
+ /* basic settings*/
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:Arial, sans-serif;
+      color:#222;
+}
+
+/* Navigation Bar */
+header{
+    background-color:#123b82;
+    color: white;
+    padding:20px 5%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header h2{
+    font-size:24px;
+}
+nav a {
+    color: white;
+    text-decoration:none;
+    margin-left:30px;
+    font-weight:bold;
+}
+/*Home Section*/
+.home{
+    height:410px;
+    background-image:
+      url("images/hotel.jpg");
+      background-size: cover;
+      background-position: center;
+      display:flex;
+      justify-content:flex-end;
+      align-items:center;
+      padding-right:8%;
+}
+/* Welcome Box*/
+.welcome{
+    background-color:white;
+    width:390px;
+    padding:35px;
+    text-align: center;
+    box-shadow:0 3px 10px gray;
+}
+.welcome h1{
+    color:#123b82;
+    font-size:32px;
+    margin-bottom:15px;
+}
+.welcome p {
+    font-size:18px;
+    line-height:1.5;
+    margin-bottom:20px;
+}
+/* Buttons*/
+button{
+    background-color:#123b82;
+    color: white;
+    border:none;
+    padding:12px 25px;
+    border-radius:5px;
+    font-size:16px;
+    cursor:pointer;
+}
+button:hover{
+    background-color:#1d56b3;
+}
+/* Booking Section*/
+.booking {
+    background-color:#f2f3ff;
+    padding:35px 5%;
+    text-align:center;
+}
+.booking h2{
+    margin-bottom:25px;
+    color:#123b82;
+}
+.booking-form{
+    display:flex;
+    justify-content:center;
+    align-items:end;
+    gap:25px;
+    flex-wrap:wrap;
+}
+.booking-form div {
+    display:flex;
+    flex-direction:column;
+    text-align:left;
+}
+.booking-form label{
+    margin-bottom:7px;
+    font-weight:bold;
+}
+.booking-form input,
+.booking-form select {
+    width:205px;
+    padding:12px;
+    border:1px solid#ccc;
+    border-radius:5px;
+    background-color: white;
+}
+/* Services Section*/
+.services {
+    padding: 45px 5%;
+    text-align: center;
+}
+.services h2 {
+    color:#123b82;
+    margin-bottom: 30px;
+}
+.service-container {
+    display:flex;
+    justify-content: center;
+    gap:20px;
+    flex-wrap: wrap;
+}
+/* Service card*/
+.service-card{
+    width:220px;
+    min-height:210px;
+    padding:25px 15px;
+    border:1px solid #ddd;
+    border-radius:5px;
+    background-color: white;
+    box-shadow:0 2px 8px #ddd;
+}
+.service-card:hover {
+    transform: translateY(-5px);
+}
+.icon { 
+    font-size:40px;
+    margin-bottom:15px;
+}
+.service-card h3{
+    color:#123b82;
+    margin-bottom:12px;
+}
+.service-card p {
+    line-height: 1.5;
+    color:#555;
+}
+/* Why Choose Use*/
+.why-us {
+    background-color:#f1faf4;
+    padding: 40px 5%;
+    text-align: center;
+}
+.why-us h2 {
+    color:#123b82;
+    margin-bottom: 30px;
+}
+.why-container{
+    display:flex;
+    justify-content:center;
+    gap: 30px;
+    flex-wrap:wrap;
+}
+.why-container div {
+    width: 250px;
+}
+.why-container h3{
+    color:#237a3b;
+    margin-bottom: 10px;
+}
+.why-container p {
+    color:#555;
+    line-height: 1.5;
+}
+/* Footer*/
+footer {
+    background-color:#123b82;
+    color:white;
+    padding:35px 8%;
+    text-align: center;
+}
+.footer-content {
+    display:flex;
+    justify-content: space-around;
+    text-align: left;
+    margin-bottom: 25px;
+}
+footer h2 {
+    margin-bottom: 15px;
+}
+footer p {
+    margin: 8px 0;
+}
+
+footer hr {
+    border: none;
+    border-top: 1px solid #ffffff66;
+    margin-bottom: 20px;
+}
+/* Mobile Screen*/
+@media (max-width:600px) {
+    header{
+        flex-direction:column;
+        gap: 15px;
+    }
+    nav a {
+        margin: 5px;
+    }
+    .home {
+        justify-content: center;
+        padding-right: 0;
+    }
+    .welcome {
+        width: 85%;
+    }
+    .booking-form {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-content {
+        flex-direction: column;
+        gap: 25px;
+        text-align: center;
+    }
+}
